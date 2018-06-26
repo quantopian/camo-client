@@ -13,7 +13,7 @@ class CamoClient(object):
     def image_url(self, url):
         # skip images that have already been proxied and
         # images with data URIs
-        if url.startswith(self.server) or url.startswith("data:image/"):
+        if url.startswith(self.server):
             return url
         else:
             return self.server + Image(url, self.key).path

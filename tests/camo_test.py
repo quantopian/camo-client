@@ -43,11 +43,6 @@ class CamoClientTest(unittest.TestCase):
         html = """<p><img src="https://fakecdn.org/images/hahafunny.jpg"></p>"""
         self.assertEqual(client.parse_html(html), html)
 
-    def test_ignores_data_uri(self):
-        client = CamoClient("https://fakecdn.org/", key="hello")
-        html = """<p><img src="data:image/png;base64,iVBOR0t8XDY0bb"></p>"""
-        self.assertEqual(client.parse_html(html), html)
-
     def test_unmarkedup_text(self):
         client = CamoClient("https://fakecdn.org/", key="hello")
         text = """butts"""
