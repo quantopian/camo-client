@@ -20,6 +20,8 @@ setup(
         'Operating System :: OS Independent',
         'License :: OSI Approved :: MIT License',
         'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Internet :: Proxy Servers'
+        'Topic :: Internet :: Proxy Servers',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python',
     ],
 )
